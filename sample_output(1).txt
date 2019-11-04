@@ -1,0 +1,26 @@
+*************************************
+Handled request from process_1, state: granted.
+Available array: (2).
+Allocation: process_1:(1); process_2:(0).
+Need: process_1:(2); process_2:(2).
+deadline misses: None.
+*************************************
+*************************************
+Handled request from process_2, state: granted.
+Available array: (0).
+Allocation: process_1:(1); process_2:(2).
+Need: process_1:(2); process_2:(0).
+deadline misses: None.
+*************************************
+*************************************
+Release 2 resource 1 from process_2.
+*************************************
+Handled request from process_1, state: accepted.
+Available array: (0).
+Allocation: process_1:(3); process_2:(0).
+Need: process_1:(0); process_2:(0).
+deadline misses: None.
+*************************************
+*************************************
+Release 3 resource 1 from process_1.
+*************************************

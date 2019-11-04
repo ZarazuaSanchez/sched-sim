@@ -1,0 +1,9 @@
+The first request serviced is request(2,0) from process_1 because it has the earliest deadline. The request is granted after checking with the Banker's algorithm. 
+
+Request(0,2) from process_2 is rejected because if it is granted a deadlock will occur.
+
+Request(0,3) from process_1 is granted because all other requests (the request from process_2) have been handled. It is granted after checking with the Banker's algorithm.
+
+Request(0,2) from process_2 is granted but the system cannot allocate the resource until process_1 release the resources due to the lack of resources.
+
+Request(2,0) is granted after checking with the Banker's algorithm.

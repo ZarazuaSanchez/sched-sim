@@ -1,0 +1,7 @@
+The first request serviced is request(1) from process_1 because it has the earliest deadline. The request is granted after checking with the Banker's algorithm.
+
+Request(2) from process_2 will be handled and granted according to the Banker's algorithm. 
+
+After this, request(2) from process_1 will be serviced. Granting the request pass the Banker's algorithm safe state test, yet resources left are not enough. So process_1 will wait till process_2 releases the resource it holds. 
+
+Then process_1 releases all resources and the program ends.
